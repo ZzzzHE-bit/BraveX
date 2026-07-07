@@ -1,0 +1,27 @@
+# 官方默认配置 - Baseline
+name: "official"
+description: "官方默认代价配置，用于基线对比"
+
+robot: "franka.yml"
+scene: "collision_test.yml"
+
+cost:
+  scene_collision: 5000.0
+  self_collision: 5000.0
+  cspace_position: 5000.0
+  cspace_velocity: 5000.0
+  cspace_acceleration: 5000.0
+  cspace_jerk: 5000.0
+  cspace_torque: 5000.0
+  target_cspace_dist: 0.0
+  start_cspace_dist: 0.001
+  tool_pose: [1.0, 1.0]
+
+planner:
+  max_attempts: 3
+  num_seeds: 32
+  interpolation_dt: 0.02
+
+experiment:
+  steps: 15
+  move_range: 0.1

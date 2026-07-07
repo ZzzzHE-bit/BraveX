@@ -1,0 +1,30 @@
+{
+  "official": {
+    "config": "official",
+    "success_rate": 1.0,
+    "avg_plan_time": 0.16410566866397858,
+    "avg_waypoints": 15000.0,
+    "total_steps": 16
+  },
+  "dynamic": {
+    "config": "dynamic",
+    "success_rate": 1.0,
+    "avg_plan_time": 0.16409756243228912,
+    "avg_waypoints": 15000.0,
+    "total_steps": 16
+  },
+  "smooth": {
+    "config": "smooth",
+    "success_rate": 1.0,
+    "avg_plan_time": 0.16447311639785767,
+    "avg_waypoints": 15000.0,
+    "total_steps": 16
+  },
+  "safe": {
+    "config": "safe",
+    "success_rate": 1.0,
+    "avg_plan_time": 0.16527456045150757,
+    "avg_waypoints": 15000.0,
+    "total_steps": 16
+  }
+}

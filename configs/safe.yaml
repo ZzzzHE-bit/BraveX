@@ -1,0 +1,27 @@
+# 安全优先配置 - Safety Focus
+name: "safe"
+description: "提高碰撞代价权重，优先保证安全性"
+
+robot: "franka.yml"
+scene: "collision_test.yml"
+
+cost:
+  scene_collision: 10000.0
+  self_collision: 10000.0
+  cspace_position: 5000.0
+  cspace_velocity: 5000.0
+  cspace_acceleration: 5000.0
+  cspace_jerk: 5000.0
+  cspace_torque: 5000.0
+  target_cspace_dist: 0.05
+  start_cspace_dist: 0.001
+  tool_pose: [1.0, 1.0]
+
+planner:
+  max_attempts: 5
+  num_seeds: 64
+  interpolation_dt: 0.02
+
+experiment:
+  steps: 15
+  move_range: 0.1
